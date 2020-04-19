@@ -25,5 +25,15 @@ abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initView()
+        initData()
+    }
+
     abstract fun getLayoutId(): Int
+
+    protected abstract fun initView()
+
+    protected open fun initData() {}
 }

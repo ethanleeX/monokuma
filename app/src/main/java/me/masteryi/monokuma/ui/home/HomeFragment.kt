@@ -1,7 +1,8 @@
-package me.masteryi.monokuma.main.home
+package me.masteryi.monokuma.ui.home
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import me.masteryi.monokuma.R
 import me.masteryi.monokuma.base.BaseFragment
 import me.masteryi.monokuma.databinding.FragmentHomeBinding
@@ -28,4 +29,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         return R.layout.fragment_home
     }
 
+    override fun initView() {
+        binding.recyclerView.layoutManager = LinearLayoutManager(context)
+        binding.recyclerView.adapter = CategoryAdapter(context!!)
+    }
 }

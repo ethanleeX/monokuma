@@ -1,9 +1,9 @@
-package me.masteryi.monokuma.main
+package me.masteryi.monokuma.ui.main
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import me.masteryi.monokuma.main.home.HomeFragment
+import me.masteryi.monokuma.ui.home.HomeFragment
 
 /**
  * main adapter

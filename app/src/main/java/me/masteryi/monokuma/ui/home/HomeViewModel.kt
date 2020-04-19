@@ -1,4 +1,4 @@
-package me.masteryi.monokuma.main.home
+package me.masteryi.monokuma.ui.home
 
 import androidx.lifecycle.ViewModel
 

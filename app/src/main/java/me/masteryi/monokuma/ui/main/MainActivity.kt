@@ -1,4 +1,4 @@
-package me.masteryi.monokuma.main
+package me.masteryi.monokuma.ui.main
 
 import androidx.viewpager2.widget.ViewPager2
 import me.masteryi.monokuma.R
